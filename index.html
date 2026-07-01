@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noufal Ibrahim | Senior Mobile Engineer</title>
-    <meta name="description" content="Senior Mobile Application Developer specializing in Flutter, Android, and iOS development.">
+    <meta name="description" content="Senior Mobile Application Developer specializing in Flutter, Android, and iOS development with 6+ years of experience delivering production-ready applications.">
+    <meta name="keywords" content="Flutter Developer, Mobile Engineer, Android, iOS, Dart, BLoC, GetX, Firebase, Banking Apps, Healthcare Apps">
+    <meta name="author" content="Noufal Ibrahim">
     
-    <!-- Fonts -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://noufalibrahim.dev/">
+    <meta property="og:title" content="Noufal Ibrahim | Senior Mobile Engineer">
+    <meta property="og:description" content="Senior Mobile Application Developer specializing in Flutter, Android, and iOS development.">
+    <meta property="og:image" content="./images/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://noufalibrahim.dev/">
+    <meta property="twitter:title" content="Noufal Ibrahim | Senior Mobile Engineer">
+    <meta property="twitter:description" content="Senior Mobile Application Developer specializing in Flutter, Android, and iOS development.">
+    <meta property="twitter:image" content="./images/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    
+    <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
@@ -16,7 +39,11 @@
     
     <!-- Icons -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
-
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
@@ -38,889 +65,296 @@
             }
         }
     </script>
-    <style>
-        .glass-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-    </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-primary-500 selection:text-white">
-
+    
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tight text-slate-900">Noufal Ibrahim<span class="text-primary-600">.</span></a>
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
-                <a href="#about" class="hover:text-primary-600 transition-colors">About</a>
-                <a href="#skills" class="hover:text-primary-600 transition-colors">Skills</a>
-                <a href="#experience" class="hover:text-primary-600 transition-colors">Experience</a>
-                <a href="#projects" class="hover:text-primary-600 transition-colors">Projects</a>
-                <a href="#contact" class="hover:text-primary-600 transition-colors">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="pt-32 pb-20 md:pt-48 md:pb-32 max-w-5xl mx-auto px-6">
-        <div class="max-w-3xl">
-            <div class="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-600 text-xs font-semibold tracking-wide uppercase mb-6">
-                Based in Indonesia
-            </div>
-            <h1 class="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight leading-tight mb-6">
-                Senior Mobile Engineer constructing <span class="text-primary-600">scalable</span> digital experiences.
-            </h1>
-            <p class="text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl">
-                With over 6 years of production experience, I specialize in architecting high-performance Flutter applications for banking, healthcare, education, and enterprise distribution sectors.
-            </p>
-            <div class="flex flex-wrap gap-4">
-                <a href="mailto:noufalibrahim8598@gmail.com" class="inline-flex items-center px-6 py-3 bg-slate-900 text-white font-medium rounded-lg hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/20">
-                    <i data-lucide="mail" class="w-4 h-4 mr-2"></i> Contact Me
+    <header>
+        <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200" role="navigation" aria-label="Main navigation">
+            <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#" class="text-xl font-bold tracking-tight text-slate-900" aria-label="Noufal Ibrahim - Home">
+                    Noufal Ibrahim<span class="text-primary-600">.</span>
                 </a>
-                <a href="https://linkedin.com/in/noufal-ibrahim-93b718147" target="_blank" class="inline-flex items-center px-6 py-3 bg-white text-slate-700 font-medium rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all">
-                    <i data-lucide="linkedin" class="w-4 h-4 mr-2"></i> LinkedIn
-                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#about" class="hover:text-primary-600 transition-colors">About</a>
+                    <a href="#skills" class="hover:text-primary-600 transition-colors">Skills</a>
+                    <a href="#experience" class="hover:text-primary-600 transition-colors">Experience</a>
+                    <a href="#projects" class="hover:text-primary-600 transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-primary-600 transition-colors">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-8 h-8" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="bg-slate-600 block h-0.5 w-6 transform transition duration-300 ease-in-out"></span>
+                    <span class="bg-slate-600 block h-0.5 w-6 transform transition duration-300 ease-in-out mt-1"></span>
+                    <span class="bg-slate-600 block h-0.5 w-6 transform transition duration-300 ease-in-out mt-1"></span>
+                </button>
             </div>
-        </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200">
+                <div class="px-6 py-4 space-y-3 text-sm font-medium text-slate-600">
+                    <a href="#about" class="block hover:text-primary-600 transition-colors">About</a>
+                    <a href="#skills" class="block hover:text-primary-600 transition-colors">Skills</a>
+                    <a href="#experience" class="block hover:text-primary-600 transition-colors">Experience</a>
+                    <a href="#projects" class="block hover:text-primary-600 transition-colors">Projects</a>
+                    <a href="#contact" class="block hover:text-primary-600 transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- About & Skills Grid -->
-    <section id="about" class="py-20 bg-white border-y border-slate-100">
-        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
-            
-            <!-- About Content -->
-            <div>
-                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <i data-lucide="user" class="w-6 h-6 mr-3 text-primary-600"></i>
-                    About Me
-                </h2>
-                <div class="prose prose-slate text-slate-600 leading-relaxed">
-                    <p class="mb-4">
-                        <strong>Senior Flutter Developer</strong> with 6+ years of experience delivering production-ready Android and iOS applications for global users. Specialized in stabilizing, testing, and improving Flutter apps, integrating REST APIs and Firebase services, and managing end-to-end releases to the Play Store and App Store.
-                    </p>
-                    <p class="mb-4">
-                        Experienced in fully remote, async teams and comfortable owning features from implementation through production deployment.
-                    </p>
-                    <p>
-                        <strong>Portfolio:</strong><br>
-                        <a href="https://noufalgithub.github.io/flutter-portofolio/" target="_blank" class="text-primary-600 hover:underline">https://noufalgithub.github.io/flutter-portofolio/</a>
-                    </p>
-                    <p class="mt-4">
-                        <strong>Education:</strong><br>
-                        Associate Degree in Informatics (Diploma III), Indramayu State Polytechnic (2016–2019)<br>
-                        GPA: 3.32/4.00 | Deputy head of student journalists
-                    </p>
-                </div>
-            </div>
-
-            <!-- Skills -->
-            <div id="skills">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <i data-lucide="cpu" class="w-6 h-6 mr-3 text-primary-600"></i>
-                    Technical Stack
-                </h2>
-                <div class="space-y-6">
-                    <div>
-                        <h3 class="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">Mobile</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Flutter (Android & iOS)</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Android SDK Build</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Release Management</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">Backend & Services</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">REST APIs</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Firebase (Auth, Firestore, FCM)</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">State Management</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Cubit</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Provider</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">GetX</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Riverpod</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">Native Debugging</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Kotlin</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Swift (basic native-level debugging)</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">CI/CD & Release</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Codemagic</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Bitrise</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">GitHub Actions</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Play Store & App Store publishing</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 max-w-5xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-slate-900 mb-12">Professional Experience</h2>
-        
-        <div class="relative border-l-2 border-slate-200 ml-3 space-y-12">
-            
-            <!-- Job 1 -->
-            <div class="relative pl-8 md:pl-12">
-                <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-primary-600 border-4 border-white shadow-sm"></div>
-                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                        <div>
-                            <h3 class="text-lg font-bold text-slate-900">Mobile Developer</h3>
-                            <p class="text-primary-600 font-medium">PT. Komuri Indonesia GeekGarden (Contract - Hybrid)</p>
-                            <p class="text-sm text-slate-500 mt-1">Jakarta, Indonesia</p>
-                        </div>
-                        <span class="inline-block px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full mt-2 md:mt-0">Nov 2025 – Present</span>
-                    </div>
-                    <ul class="list-disc list-outside ml-5 text-slate-600 space-y-2">
-                        <li>Led mobile development for an enterprise-scale distribution & sales management platform (ScyllaX).</li>
-                        <li>Designed and implemented an offline-first architecture to support large-scale field operations.</li>
-                        <li>Developed complex workflow systems including sales tracking, inventory management, and field activity monitoring.</li>
-                        <li>Implemented geo-location tracking features to support field activity monitoring.</li>
-                        <li>Ensured high performance, scalability, and maintainability using clean architecture best practices.</li>
-                        <li>Worked with remote, async teams and comfortable owning features from implementation through production deployment.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Job 2 -->
-            <div class="relative pl-8 md:pl-12">
-                <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
-                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                        <div>
-                            <h3 class="text-lg font-bold text-slate-900">Mobile Apps Developer (Contract)</h3>
-                            <p class="text-primary-600 font-medium">PT. Bumi Amartha Teknologi Mandiri</p>
-                            <p class="text-sm text-slate-500 mt-1">Client: Bank CIMB Niaga | Tangerang, Indonesia</p>
-                        </div>
-                        <span class="inline-block px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full mt-2 md:mt-0">Nov 2023 – Apr 2025</span>
-                    </div>
-                    <ul class="list-disc list-outside ml-5 text-slate-600 space-y-2">
-                        <li>Core developer for <strong>ARJUNA</strong> (CIMB Niaga Mobile Banking), ensuring 99.9% app stability.</li>
-                        <li>Tested, fixed, and polished Flutter builds to meet banking security, performance, and App Store compliance standards.</li>
-                        <li>Implemented secure authentication flows and integrated financial REST APIs.</li>
-                        <li>Actively debugged Android (Gradle, Kotlin) and iOS (Xcode, Swift) issues during release cycles.</li>
-                        <li>Set up and maintained CI/CD pipelines for streamlining testing and store-release preparation.</li>
-                        <li>Worked interdisciplinarily with backend, QA, and design teams in a remote Agile environment.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Job 3 -->
-            <div class="relative pl-8 md:pl-12">
-                <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
-                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                        <div>
-                            <h3 class="text-lg font-bold text-slate-900">Mobile Developer</h3>
-                            <p class="text-primary-600 font-medium">PT. Umma Bright Indonesia (Contract - Remote)</p>
-                            <p class="text-sm text-slate-500 mt-1">Remote</p>
-                        </div>
-                        <span class="inline-block px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full mt-2 md:mt-0">Aug 2022 – Aug 2023</span>
-                    </div>
-                    <ul class="list-disc list-outside ml-5 text-slate-600 space-y-2">
-                        <li>Developed and supported Umeds by Ummacademy, a cross-platform e-learning app available on Play Store and App Store.</li>
-                        <li>Added new features based on product feedback and roadmap priorities.</li>
-                        <li>Built reusable UI components and optimized app performance for low-end devices.</li>
-                        <li>Debugged platform-specific Android and iOS issues and resolved production bugs.</li>
-                        <li>Handled full mobile app lifecycle: development, testing, store submission, and post-release maintenance.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Job 4 -->
-            <div class="relative pl-8 md:pl-12">
-                <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
-                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                        <div>
-                            <h3 class="text-lg font-bold text-slate-900">Mobile Developer</h3>
-                            <p class="text-primary-600 font-medium">PT. Time Excelindo (Full-time + Onsite)</p>
-                            <p class="text-sm text-slate-500 mt-1">Yogyakarta, Indonesia</p>
-                        </div>
-                        <span class="inline-block px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full mt-2 md:mt-0">Dec 2020 – Aug 2022</span>
-                    </div>
-                    <ul class="list-disc list-outside ml-5 text-slate-600 space-y-2">
-                        <li>Delivered multiple Flutter applications across healthcare, education, and finance domains.</li>
-                        <li>Handled full mobile app lifecycle: development, testing, store submission, and post-release maintenance.</li>
-                        <li>Collaborated remotely with backend, QA, and design teams in remote Agile cycles.</li>
-                        <li>Delivered multiple Flutter applications across healthcare, education, and finance domains.</li>
-                        <li>Improved performance and maintainability using Provider-based state management.</li>
-                        <li>Performed regression testing, bug fixing, and store-release preparation.</li>
-                        <li>Collaborated with backend teams to integrate REST APIs and ensure data consistency.</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-slate-50 border-t border-slate-200">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Featured Projects</h2>
-                <p class="text-slate-600 max-w-2xl mx-auto">A selection of my recent work showcasing mobile applications across banking, healthcare, education, and retail sectors.</p>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero pt-32 pb-20 md:pt-48 md:pb-32 max-w-5xl mx-auto px-6 relative overflow-hidden" aria-labelledby="hero-title">
+            <!-- Animated Background Blobs -->
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div class="absolute -top-40 -right-40 w-80 h-80 bg-primary-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-emerald-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob-delay-2000"></div>
+                <div class="absolute top-40 left-40 w-80 h-80 bg-cyan-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob-delay-4000"></div>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="relative z-10 max-w-3xl">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-600 text-xs font-semibold tracking-wide uppercase mb-6 animate-on-scroll">
+                    Based in Indonesia
+                </div>
                 
-                <!-- NEW PROJECT: POS OFFLINE -->
-                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
-                    <div class="relative h-56 bg-gradient-to-br from-emerald-600 to-teal-700 flex items-center justify-center overflow-hidden">
-                        <!-- Phone Mockup -->
-                        <div class="relative">
-                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform rotate-3 transition-transform group-hover:rotate-0">
-                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                                    <div class="text-center px-2">
-                                        <i data-lucide="shopping-cart" class="w-8 h-8 text-emerald-600 mx-auto mb-2"></i>
-                                        <span class="text-xs font-bold text-slate-800">POS System</span>
-                                        <div class="mt-2 space-y-1">
-                                            <div class="h-1 bg-slate-200 rounded w-20 mx-auto"></div>
-                                            <div class="h-1 bg-slate-200 rounded w-16 mx-auto"></div>
-                                            <div class="h-1 bg-slate-200 rounded w-18 mx-auto"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Floating Elements -->
-                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <i data-lucide="wifi-off" class="w-6 h-6 text-white"></i>
-                            </div>
+                <h1 id="hero-title" class="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight leading-tight mb-6 animate-on-scroll">
+                    Senior Mobile Engineer constructing <span id="typewriter" class="text-primary-600"></span> digital experiences.
+                </h1>
+                
+                <p class="text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl animate-on-scroll">
+                    With over 6 years of production experience, I specialize in architecting high-performance Flutter applications for banking, healthcare, and enterprise sectors.
+                </p>
+                
+                <!-- Floating Stats Card -->
+                <div class="glass-card rounded-2xl p-6 mb-10 max-w-sm animate-float animate-on-scroll">
+                    <div class="grid grid-cols-2 gap-6 text-center">
+                        <div>
+                            <div class="text-3xl font-bold text-slate-900">6+</div>
+                            <div class="text-sm text-slate-600">Years Experience</div>
                         </div>
-                        <!-- Overlay Effect -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div>
+                            <div class="text-3xl font-bold text-slate-900">10+</div>
+                            <div class="text-sm text-slate-600">Apps Delivered</div>
+                        </div>
                     </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-lg font-bold text-slate-900">POS Offline System</h3>
-                            <span class="bg-emerald-100 text-emerald-700 text-xs px-2 py-1 rounded-full font-medium">Production Ready</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Enterprise-grade Point of Sale application solving retail businesses' need for reliable offline operations. Implemented complete BLoC architecture with SQLite database, supporting multi-payment methods, thermal printing, and comprehensive business analytics—all functioning 100% without internet connectivity.
+                </div>
+                
+                <div class="flex flex-wrap gap-4 animate-on-scroll">
+                    <a href="mailto:noufalibrahim8598@gmail.com" class="inline-flex items-center px-6 py-3 bg-slate-900 text-white font-medium rounded-lg hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/20">
+                        <i data-lucide="mail" class="w-4 h-4 mr-2"></i> Contact Me
+                    </a>
+                    <a href="https://linkedin.com/in/noufal-ibrahim-93b718147" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-white text-slate-700 font-medium rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all">
+                        <i data-lucide="linkedin" class="w-4 h-4 mr-2"></i> LinkedIn
+                    </a>
+                    <a href="#" class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-all shadow-lg shadow-primary-600/20">
+                        <i data-lucide="download" class="w-4 h-4 mr-2"></i> Download CV
+                    </a>
+                </div>
+                
+                <!-- Scroll Down Indicator -->
+                <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
+                    <i data-lucide="chevron-down" class="w-6 h-6 text-slate-400"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Skills Grid -->
+        <section id="about" class="py-20 bg-white border-y border-slate-100" aria-labelledby="about-title">
+            <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
+                
+                <!-- About Content -->
+                <div class="animate-on-scroll">
+                    <h2 id="about-title" class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                        <i data-lucide="user" class="w-6 h-6 mr-3 text-primary-600"></i>
+                        About Me
+                    </h2>
+                    <div class="prose prose-slate text-slate-600 leading-relaxed">
+                        <p class="mb-4">
+                            <strong>Senior Mobile Developer</strong> with 6+ years of experience building scalable, production-ready applications across Android and iOS ecosystems. Expert in cross-platform development using Flutter and React Native, backed by a strong foundation in native development with Android (Kotlin/Java) and iOS (Swift).
                         </p>
-                        
-                        <!-- Features List -->
-                        <ul class="space-y-2 mb-4">
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-emerald-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Multi-Payment:</strong> Cash, QRIS, Transfer, Online</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-emerald-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Thermal Printing:</strong> Bluetooth 58mm/80mm support</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-emerald-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Advanced Features:</strong> Barcode scanner, Analytics, Role-based access</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-emerald-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Data Management:</strong> SQLite, Backup/Restore, PDF export</span>
-                            </li>
+                        <p class="mb-4">
+                            Specialized in clean architecture, offline-first systems, and secure API integrations. I bridge the gap between flexible hybrid frameworks and powerful native capabilities to optimize performance, handle complex platform integrations, and ensure a seamless user experience.
+                        </p>
+                        <p>
+                            <strong>Education:</strong><br>
+                            Associate Degree in Informatics (Diploma III), Indramayu State Polytechnic (2016–2019)<br>
+                            GPA: 3.32/4.00 | Deputy head of student journalists
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div id="skills" class="animate-on-scroll">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                        <i data-lucide="cpu" class="w-6 h-6 mr-3 text-primary-600"></i>
+                        Technical Stack
+                    </h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">Core</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Flutter</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Dart</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">React Native</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Swift</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Kotlin</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Java</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">Architecture & State</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Clean Architecture</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">BLoC</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">GetX</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Provider</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Riverpod</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">DevOps & Tools</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">CI/CD (GitHub Actions, Codemagic, Bitrise)</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Firebase</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Git</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-md text-sm font-medium border border-slate-200">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 max-w-5xl mx-auto px-6" aria-labelledby="experience-title">
+            <h2 id="experience-title" class="text-3xl font-bold text-slate-900 mb-12">Professional Experience</h2>
+            
+            <div class="relative border-l-2 border-slate-200 ml-3 space-y-12">
+                
+                <!-- Experience Timeline Items -->
+                <article class="relative pl-8 md:pl-12 animate-on-scroll">
+                    <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-primary-600 border-4 border-white shadow-sm"></div>
+                    <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900">Mobile Developer (Contract - Hybrid)</h3>
+                                <p class="text-primary-600 font-medium">PT. Komuri Indonesia GeekGarden</p>
+                                <p class="text-sm text-slate-500 mt-1">Indonesia</p>
+                            </div>
+                            <time class="inline-block px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full mt-2 md:mt-0">Nov 2025 – Jun 2026</time>
+                        </div>
+                        <ul class="list-disc list-outside ml-5 text-slate-600 space-y-2">
+                            <li>Led Flutter mobile development for an enterprise-scale distribution & sales management platform (Scylla X).</li>
+                            <li>Engineered a robust offline-first architecture to ensure 100% data integrity for field operations in low-connectivity areas.</li>
+                            <li>Developed high-complexity modules including Geo-location tracking, automated Sales workflows, and Promotion engines.</li>
+                            <li>Optimized API synchronization logic, reducing data latency and improving system maintainability through Clean Architecture.</li>
                         </ul>
-
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-xs font-medium text-slate-600 bg-emerald-50 px-2 py-1 rounded border border-emerald-200">Flutter</span>
-                            <span class="text-xs font-medium text-slate-600 bg-emerald-50 px-2 py-1 rounded border border-emerald-200">BLoC Pattern</span>
-                            <span class="text-xs font-medium text-slate-600 bg-emerald-50 px-2 py-1 rounded border border-emerald-200">SQLite</span>
-                            <span class="text-xs font-medium text-slate-600 bg-emerald-50 px-2 py-1 rounded border border-emerald-200">Clean Arch</span>
-                            <span class="text-xs font-medium text-slate-600 bg-emerald-50 px-2 py-1 rounded border border-emerald-200">ESC/POS</span>
-                        </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Qolbu -->
-                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
-                    <div class="relative h-56 bg-gradient-to-br from-teal-600 to-cyan-700 flex items-center justify-center overflow-hidden">
-                        <!-- Phone Mockup -->
-                        <div class="relative">
-                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform rotate-3 transition-transform group-hover:rotate-0">
-                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                                    <div class="text-center px-2">
-                                        <i data-lucide="moon" class="w-8 h-8 text-teal-600 mx-auto mb-2"></i>
-                                        <span class="text-xs font-bold text-slate-800">Qolbu</span>
-                                        <span class="text-xs text-slate-500 block">Islamic App</span>
-                                        <div class="mt-2 space-y-1">
-                                            <div class="h-1 bg-teal-200 rounded w-20 mx-auto"></div>
-                                            <div class="h-1 bg-teal-200 rounded w-16 mx-auto"></div>
-                                            <div class="h-1 bg-teal-200 rounded w-18 mx-auto"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                <article class="relative pl-8 md:pl-12 animate-on-scroll">
+                    <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
+                    <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900">Mobile Apps Developer (Contract)</h3>
+                                <p class="text-primary-600 font-medium">PT. Bumi Amartha Teknologi Mandiri</p>
+                                <p class="text-sm text-slate-500 mt-1">Client: Bank CIMB Niaga | Tangerang, Indonesia</p>
                             </div>
-                            <!-- Floating Elements -->
-                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <i data-lucide="book-open" class="w-6 h-6 text-white"></i>
-                            </div>
+                            <time class="inline-block px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full mt-2 md:mt-0">Nov 2023 – Apr 2025</time>
                         </div>
-                        <!-- Overlay Effect -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-lg font-bold text-slate-900">Qolbu</h3>
-                            <span class="bg-teal-100 text-teal-700 text-xs px-2 py-1 rounded-full font-medium">Islamic</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Comprehensive Islamic companion app helping Muslims with daily worship. Features complete digital Quran with audio murottal, prayer times with adhan notifications, Qibla finder, digital tasbih counter, daily duas, Asmaul Husna, and nearby mosque locator. Built with clean architecture and BLoC pattern for optimal performance.
-                        </p>
-                        
-                        <!-- Features List -->
-                        <ul class="space-y-2 mb-4">
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-teal-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Al-Quran:</strong> 30 Juz with audio, tafsir, bookmarks</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-teal-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Prayer Times:</strong> Auto location-based with adhan notifications</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-teal-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Qibla Finder:</strong> Compass with distance to Ka'bah</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-teal-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Digital Tasbih:</strong> Counter with vibration, save sessions</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-teal-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Localization:</strong> Indonesian & English support</span>
-                            </li>
+                        <ul class="list-disc list-outside ml-5 text-slate-600 space-y-2">
+                            <li>Core developer for <strong>ARJUNA</strong> (CIMB Niaga Mobile Banking), ensuring 99.9% app stability.</li>
+                            <li>Integrated complex secure authentication protocols and financial APIs compliant with banking regulations.</li>
+                            <li>Architected CI/CD pipelines that reduced release cycle time by <strong>40%</strong>.</li>
+                            <li>Collaborated closely with QA and Backend teams to resolve critical bugs in an Agile environment.</li>
                         </ul>
-
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-xs font-medium text-slate-600 bg-teal-50 px-2 py-1 rounded border border-teal-200">Flutter</span>
-                            <span class="text-xs font-medium text-slate-600 bg-teal-50 px-2 py-1 rounded border border-teal-200">BLoC Pattern</span>
-                            <span class="text-xs font-medium text-slate-600 bg-teal-50 px-2 py-1 rounded border border-teal-200">Clean Arch</span>
-                            <span class="text-xs font-medium text-slate-600 bg-teal-50 px-2 py-1 rounded border border-teal-200">GetIt DI</span>
-                            <span class="text-xs font-medium text-slate-600 bg-teal-50 px-2 py-1 rounded border border-teal-200">Audio</span>
-                        </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Smart Attendance -->
-                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
-                    <div class="relative h-56 bg-gradient-to-br from-indigo-600 to-purple-700 flex items-center justify-center overflow-hidden">
-                        <!-- Phone Mockup -->
-                        <div class="relative">
-                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform -rotate-3 transition-transform group-hover:rotate-0">
-                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                                    <div class="text-center px-2">
-                                        <i data-lucide="user-check" class="w-8 h-8 text-indigo-600 mx-auto mb-2"></i>
-                                        <span class="text-xs font-bold text-slate-800">Smart Attendance</span>
-                                        <div class="mt-2 space-y-1">
-                                            <div class="h-1 bg-slate-200 rounded w-20 mx-auto"></div>
-                                            <div class="h-1 bg-slate-200 rounded w-16 mx-auto"></div>
-                                            <div class="h-1 bg-slate-200 rounded w-18 mx-auto"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                <article class="relative pl-8 md:pl-12 animate-on-scroll">
+                    <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
+                    <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900">Mobile Apps Developer (Contract)</h3>
+                                <p class="text-primary-600 font-medium">PT. Umma Bright Indonesia</p>
+                                <p class="text-sm text-slate-500 mt-1">Remote</p>
                             </div>
-                            <!-- Floating Elements -->
-                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <i data-lucide="clock" class="w-6 h-6 text-white"></i>
-                            </div>
+                            <time class="inline-block px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full mt-2 md:mt-0">Aug 2022 – Aug 2023</time>
                         </div>
-                        <!-- Overlay Effect -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-lg font-bold text-slate-900">Smart Attendance & Workforce Management</h3>
-                            <span class="bg-indigo-100 text-indigo-700 text-xs px-2 py-1 rounded-full font-medium">Enterprise</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Production-ready workforce management system built with Flutter and Firebase to manage employee attendance in a secure, scalable, real-time environment. Features role-based access control, automated attendance lifecycle, offline-first behavior, and backend automation using Cloud Functions. Demonstrates enterprise-grade clean architecture suitable for real-world deployment.
-                        </p>
-                        
-                        <!-- Features List -->
-                        <ul class="space-y-2 mb-4">
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-indigo-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Authentication:</strong> Firebase Auth with role-based access (Admin, Manager, Employee)</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-indigo-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Attendance:</strong> Daily check-in/out, auto status calculation, offline sync</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-indigo-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Leave Management:</strong> Request submission, approval workflow, real-time updates</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-indigo-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Automation:</strong> Cloud Functions for absent marking, monthly recap, CSV/PDF export</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-indigo-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Security:</strong> Selfie upload, fine-grained Firestore rules, audit logging</span>
-                            </li>
+                        <ul class="list-disc list-outside ml-5 text-slate-600 space-y-2">
+                            <li>Built <strong>Umeds</strong> from scratch, an e-learning platform for medical and dental students.</li>
+                            <li>Optimized application state management using Provider, resulting in a smoother user experience.</li>
+                            <li>Managed full lifecycle deployment to both Google Play Store and Apple App Store.</li>
                         </ul>
-
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-xs font-medium text-slate-600 bg-indigo-50 px-2 py-1 rounded border border-indigo-200">Flutter</span>
-                            <span class="text-xs font-medium text-slate-600 bg-indigo-50 px-2 py-1 rounded border border-indigo-200">Firebase</span>
-                            <span class="text-xs font-medium text-slate-600 bg-indigo-50 px-2 py-1 rounded border border-indigo-200">Cloud Functions</span>
-                            <span class="text-xs font-medium text-slate-600 bg-indigo-50 px-2 py-1 rounded border border-indigo-200">Clean Arch</span>
-                            <span class="text-xs font-medium text-slate-600 bg-indigo-50 px-2 py-1 rounded border border-indigo-200">Firestore</span>
-                        </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- E-Commerce Agriculture -->
-                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
-                    <div class="relative h-56 bg-gradient-to-br from-green-600 to-lime-700 flex items-center justify-center overflow-hidden">
-                        <!-- Phone Mockup -->
-                        <div class="relative">
-                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform -rotate-3 transition-transform group-hover:rotate-0">
-                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                                    <div class="text-center px-2">
-                                        <i data-lucide="sprout" class="w-8 h-8 text-green-600 mx-auto mb-2"></i>
-                                        <span class="text-xs font-bold text-slate-800">Pataniku</span>
-                                        <span class="text-xs text-slate-500 block">E-Commerce</span>
-                                        <div class="mt-2 space-y-1">
-                                            <div class="h-1 bg-green-200 rounded w-20 mx-auto"></div>
-                                            <div class="h-1 bg-green-200 rounded w-16 mx-auto"></div>
-                                            <div class="h-1 bg-green-200 rounded w-18 mx-auto"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                <article class="relative pl-8 md:pl-12 animate-on-scroll">
+                    <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
+                    <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900">Mobile Apps Developer (Contract)</h3>
+                                <p class="text-primary-600 font-medium">PT. Time Excelindo</p>
+                                <p class="text-sm text-slate-500 mt-1">Yogyakarta, Indonesia</p>
                             </div>
-                            <!-- Floating Elements -->
-                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <i data-lucide="truck" class="w-6 h-6 text-white"></i>
-                            </div>
+                            <time class="inline-block px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full mt-2 md:mt-0">Dec 2020 – Aug 2022</time>
                         </div>
-                        <!-- Overlay Effect -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-lg font-bold text-slate-900">Pataniku</h3>
-                            <span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full font-medium">Agriculture</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Comprehensive e-commerce platform connecting farmers directly with consumers. Features real-time inventory management, dynamic pricing based on harvest seasons, and integrated logistics for fresh produce delivery. Empowers local farmers with digital tools to reach wider markets.
-                        </p>
-                        
-                        <!-- Features List -->
-                        <ul class="space-y-2 mb-4">
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-green-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Direct Trade:</strong> Farmer-to-consumer marketplace</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-green-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Fresh Tracking:</strong> Real-time produce quality monitoring</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-green-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Smart Logistics:</strong> Cold chain delivery optimization</span>
-                            </li>
-                            <li class="flex items-start text-xs text-slate-600">
-                                <i data-lucide="check-circle-2" class="w-3 h-3 text-green-600 mt-0.5 mr-2 shrink-0"></i>
-                                <span><strong>Payment:</strong> Digital wallets, COD, Bank transfer</span>
-                            </li>
+                        <ul class="list-disc list-outside ml-5 text-slate-600 space-y-2">
+                            <li>Delivered multiple Flutter applications across Healthcare and Education sectors.</li>
+                            <li>Implemented custom UI components and complex animations to meet specific client branding.</li>
+                            <li>Provided post-release maintenance and performance tuning for high-traffic apps.</li>
                         </ul>
-
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-xs font-medium text-slate-600 bg-green-50 px-2 py-1 rounded border border-green-200">Flutter</span>
-                            <span class="text-xs font-medium text-slate-600 bg-green-50 px-2 py-1 rounded border border-green-200">GetX</span>
-                            <span class="text-xs font-medium text-slate-600 bg-green-50 px-2 py-1 rounded border border-green-200">Firebase</span>
-                            <span class="text-xs font-medium text-slate-600 bg-green-50 px-2 py-1 rounded border border-green-200">Maps API</span>
-                            <span class="text-xs font-medium text-slate-600 bg-green-50 px-2 py-1 rounded border border-green-200">Payment Gateway</span>
-                        </div>
                     </div>
-                </div>
-
-                <!-- ARJUNA -->
-                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
-                    <div class="relative h-56 bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center overflow-hidden">
-                        <!-- Phone Mockup -->
-                        <div class="relative">
-                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform -rotate-3 transition-transform group-hover:rotate-0">
-                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                                    <div class="text-center px-2">
-                                        <i data-lucide="building-2" class="w-8 h-8 text-blue-600 mx-auto mb-2"></i>
-                                        <span class="text-xs font-bold text-slate-800">ARJUNA</span>
-                                        <span class="text-xs text-slate-500 block">Banking</span>
-                                        <div class="mt-2 space-y-1">
-                                            <div class="h-1 bg-blue-200 rounded w-20 mx-auto"></div>
-                                            <div class="h-1 bg-blue-200 rounded w-16 mx-auto"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Floating Elements -->
-                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <i data-lucide="shield-check" class="w-6 h-6 text-white"></i>
-                            </div>
-                        </div>
-                        <!-- Overlay Effect -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-lg font-bold text-slate-900">ARJUNA (Bank CIMB Niaga)</h3>
-                            <span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-full font-medium">Enterprise</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Core mobile banking solution for CIMB Niaga serving millions of users. Implemented secure transaction processing, biometric authentication, and real-time portfolio management while achieving 99.9% app stability and 40% faster deployment through CI/CD automation.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-xs font-medium text-slate-600 bg-blue-50 px-2 py-1 rounded border border-blue-200">Flutter</span>
-                            <span class="text-xs font-medium text-slate-600 bg-blue-50 px-2 py-1 rounded border border-blue-200">Banking</span>
-                            <span class="text-xs font-medium text-slate-600 bg-blue-50 px-2 py-1 rounded border border-blue-200">Secure</span>
-                        </div>
-                        <div class="flex gap-3 mt-4">
-                            <a href="https://play.google.com/store/apps/details?id=com.cimb.arjuna" class="text-sm text-blue-600 font-medium hover:underline flex items-center">
-                                <i data-lucide="play" class="w-3 h-3 mr-1 fill-current"></i> Play Store
-                            </a>
-                            <a href="https://apps.apple.com/id/app/arjuna-cimb-niaga/id1571642562" class="text-sm text-blue-600 font-medium hover:underline flex items-center">
-                                <i data-lucide="app-window" class="w-3 h-3 mr-1"></i> App Store
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- UMEDS -->
-                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
-                    <div class="relative h-56 bg-gradient-to-br from-purple-600 to-pink-700 flex items-center justify-center overflow-hidden">
-                        <!-- Phone Mockup -->
-                        <div class="relative">
-                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform rotate-3 transition-transform group-hover:rotate-0">
-                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                                    <div class="text-center px-2">
-                                        <i data-lucide="graduation-cap" class="w-8 h-8 text-purple-600 mx-auto mb-2"></i>
-                                        <span class="text-xs font-bold text-slate-800">UMEDS</span>
-                                        <span class="text-xs text-slate-500 block">E-Learning</span>
-                                        <div class="mt-2 space-y-1">
-                                            <div class="h-1 bg-purple-200 rounded w-20 mx-auto"></div>
-                                            <div class="h-1 bg-purple-200 rounded w-16 mx-auto"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Floating Elements -->
-                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <i data-lucide="book-open" class="w-6 h-6 text-white"></i>
-                            </div>
-                        </div>
-                        <!-- Overlay Effect -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-lg font-bold text-slate-900">Umeds by Ummacademy</h3>
-                            <span class="bg-purple-100 text-purple-700 text-xs px-2 py-1 rounded-full font-medium">Education</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Comprehensive medical education platform designed for dental and healthcare students. Features interactive learning modules, progress tracking, and offline content access, successfully deployed to both major app stores with optimized state management for smooth learning experience.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-xs font-medium text-slate-600 bg-purple-50 px-2 py-1 rounded border border-purple-200">Provider</span>
-                            <span class="text-xs font-medium text-slate-600 bg-purple-50 px-2 py-1 rounded border border-purple-200">E-Learning</span>
-                            <span class="text-xs font-medium text-slate-600 bg-purple-50 px-2 py-1 rounded border border-purple-200">Medical</span>
-                        </div>
-                        <div class="flex gap-3 mt-4">
-                            <a href="https://play.google.com/store/apps/details?id=com.ummacademy.ummacademy" class="text-sm text-purple-600 font-medium hover:underline flex items-center">
-                                <i data-lucide="play" class="w-3 h-3 mr-1 fill-current"></i> Play Store
-                            </a>
-                            <a href="https://apps.apple.com/id/app/umeds-by-ummacademy/id6444504054" class="text-sm text-purple-600 font-medium hover:underline flex items-center">
-                                <i data-lucide="app-window" class="w-3 h-3 mr-1"></i> App Store
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- HATPEN -->
-                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
-                    <div class="relative h-56 bg-gradient-to-br from-red-600 to-orange-700 flex items-center justify-center overflow-hidden">
-                        <!-- Phone Mockup -->
-                        <div class="relative">
-                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform -rotate-3 transition-transform group-hover:rotate-0">
-                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                                    <div class="text-center px-2">
-                                        <i data-lucide="heart-pulse" class="w-8 h-8 text-red-600 mx-auto mb-2"></i>
-                                        <span class="text-xs font-bold text-slate-800">HATPEN</span>
-                                        <span class="text-xs text-slate-500 block">Healthcare</span>
-                                        <div class="mt-2 space-y-1">
-                                            <div class="h-1 bg-red-200 rounded w-20 mx-auto"></div>
-                                            <div class="h-1 bg-red-200 rounded w-16 mx-auto"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Floating Elements -->
-                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <i data-lucide="stethoscope" class="w-6 h-6 text-white"></i>
-                            </div>
-                        </div>
-                        <!-- Overlay Effect -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-lg font-bold text-slate-900">HATPEN Mobile</h3>
-                            <span class="bg-red-100 text-red-700 text-xs px-2 py-1 rounded-full font-medium">Healthcare</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Specialized aviation health monitoring system ensuring pilot fitness compliance. Built comprehensive medical examination tracking with real-time status updates, serving aviation professionals and regulatory bodies with secure data management and reporting capabilities.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-xs font-medium text-slate-600 bg-red-50 px-2 py-1 rounded border border-red-200">Healthcare</span>
-                            <span class="text-xs font-medium text-slate-600 bg-red-50 px-2 py-1 rounded border border-red-200">Aviation</span>
-                            <span class="text-xs font-medium text-slate-600 bg-red-50 px-2 py-1 rounded border border-red-200">Medical</span>
-                        </div>
-                        <div class="flex gap-3 mt-4">
-                            <a href="https://play.google.com/store/apps/details?id=com.medex.mobile.medex_mobile" class="text-sm text-red-600 font-medium hover:underline flex items-center">
-                                <i data-lucide="play" class="w-3 h-3 mr-1 fill-current"></i> Play Store
-                            </a>
-                            <a href="https://apps.apple.com/id/app/hatpen-mobile/id6737185435" class="text-sm text-red-600 font-medium hover:underline flex items-center">
-                                <i data-lucide="app-window" class="w-3 h-3 mr-1"></i> App Store
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Presensi TE -->
-                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
-                    <div class="relative h-56 bg-gradient-to-br from-cyan-600 to-teal-700 flex items-center justify-center overflow-hidden">
-                        <div class="relative">
-                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform rotate-3 transition-transform group-hover:rotate-0">
-                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                                    <div class="text-center px-2">
-                                        <i data-lucide="map-pin" class="w-8 h-8 text-cyan-600 mx-auto mb-2"></i>
-                                        <span class="text-xs font-bold text-slate-800">Presensi TE</span>
-                                        <span class="text-xs text-slate-500 block">Attendance</span>
-                                        <div class="mt-2 space-y-1">
-                                            <div class="h-1 bg-cyan-200 rounded w-20 mx-auto"></div>
-                                            <div class="h-1 bg-cyan-200 rounded w-16 mx-auto"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <i data-lucide="navigation" class="w-6 h-6 text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-lg font-bold text-slate-900">Presensi TE</h3>
-                            <span class="bg-cyan-100 text-cyan-700 text-xs px-2 py-1 rounded-full font-medium">HR Tech</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            GPS-based attendance tracking system for enterprise workforce management. Features real-time location verification, automated check-in/out, and comprehensive attendance reporting for HR departments.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-xs font-medium text-slate-600 bg-cyan-50 px-2 py-1 rounded border border-cyan-200">Flutter</span>
-                            <span class="text-xs font-medium text-slate-600 bg-cyan-50 px-2 py-1 rounded border border-cyan-200">GPS</span>
-                            <span class="text-xs font-medium text-slate-600 bg-cyan-50 px-2 py-1 rounded border border-cyan-200">Geolocation</span>
-                        </div>
-                        <div class="flex gap-3 mt-4">
-                            <a href="https://play.google.com/store/apps/details?id=com.te.presensi" class="text-sm text-cyan-600 font-medium hover:underline flex items-center">
-                                <i data-lucide="play" class="w-3 h-3 mr-1 fill-current"></i> Play Store
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SIManawa -->
-                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
-                    <div class="relative h-56 bg-gradient-to-br from-amber-600 to-yellow-700 flex items-center justify-center overflow-hidden">
-                        <div class="relative">
-                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform -rotate-3 transition-transform group-hover:rotate-0">
-                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                                    <div class="text-center px-2">
-                                        <i data-lucide="school" class="w-8 h-8 text-amber-600 mx-auto mb-2"></i>
-                                        <span class="text-xs font-bold text-slate-800">SIManawa</span>
-                                        <span class="text-xs text-slate-500 block">School</span>
-                                        <div class="mt-2 space-y-1">
-                                            <div class="h-1 bg-amber-200 rounded w-20 mx-auto"></div>
-                                            <div class="h-1 bg-amber-200 rounded w-16 mx-auto"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <i data-lucide="users" class="w-6 h-6 text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-lg font-bold text-slate-900">SIManawa</h3>
-                            <span class="bg-amber-100 text-amber-700 text-xs px-2 py-1 rounded-full font-medium">Education</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Comprehensive school management information system for An-Nawawi Islamic School. Enables parents, teachers, and administrators to manage student data, grades, schedules, and school announcements in one integrated platform.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-xs font-medium text-slate-600 bg-amber-50 px-2 py-1 rounded border border-amber-200">Flutter</span>
-                            <span class="text-xs font-medium text-slate-600 bg-amber-50 px-2 py-1 rounded border border-amber-200">School MIS</span>
-                            <span class="text-xs font-medium text-slate-600 bg-amber-50 px-2 py-1 rounded border border-amber-200">REST API</span>
-                        </div>
-                        <div class="flex gap-3 mt-4">
-                            <a href="https://play.google.com/store/apps/details?id=com.te.annawawi" class="text-sm text-amber-600 font-medium hover:underline flex items-center">
-                                <i data-lucide="play" class="w-3 h-3 mr-1 fill-current"></i> Play Store
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Siranap RS -->
-                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
-                    <div class="relative h-56 bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center overflow-hidden">
-                        <div class="relative">
-                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform rotate-3 transition-transform group-hover:rotate-0">
-                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                                    <div class="text-center px-2">
-                                        <i data-lucide="hospital" class="w-8 h-8 text-rose-600 mx-auto mb-2"></i>
-                                        <span class="text-xs font-bold text-slate-800">Siranap RS</span>
-                                        <span class="text-xs text-slate-500 block">Hospital</span>
-                                        <div class="mt-2 space-y-1">
-                                            <div class="h-1 bg-rose-200 rounded w-20 mx-auto"></div>
-                                            <div class="h-1 bg-rose-200 rounded w-16 mx-auto"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <i data-lucide="bed" class="w-6 h-6 text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-lg font-bold text-slate-900">Siranap RS</h3>
-                            <span class="bg-rose-100 text-rose-700 text-xs px-2 py-1 rounded-full font-medium">Healthcare</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Hospital bed availability monitoring system providing real-time information on inpatient bed capacity. Helps patients and families find available hospital beds quickly during emergencies, integrated with national healthcare data.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-xs font-medium text-slate-600 bg-rose-50 px-2 py-1 rounded border border-rose-200">Flutter</span>
-                            <span class="text-xs font-medium text-slate-600 bg-rose-50 px-2 py-1 rounded border border-rose-200">Healthcare</span>
-                            <span class="text-xs font-medium text-slate-600 bg-rose-50 px-2 py-1 rounded border border-rose-200">Real-time</span>
-                        </div>
-                        <div class="flex gap-3 mt-4">
-                            <a href="https://apps.apple.com/id/app/siranap-rs/id1552359146" class="text-sm text-rose-600 font-medium hover:underline flex items-center">
-                                <i data-lucide="app-window" class="w-3 h-3 mr-1"></i> App Store
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BPR Adipura -->
-                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
-                    <div class="relative h-56 bg-gradient-to-br from-green-600 to-emerald-700 flex items-center justify-center overflow-hidden">
-                        <div class="relative">
-                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform -rotate-3 transition-transform group-hover:rotate-0">
-                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                                    <div class="text-center px-2">
-                                        <i data-lucide="credit-card" class="w-8 h-8 text-green-600 mx-auto mb-2"></i>
-                                        <span class="text-xs font-bold text-slate-800">BPR Adipura</span>
-                                        <span class="text-xs text-slate-500 block">Banking</span>
-                                        <div class="mt-2 space-y-1">
-                                            <div class="h-1 bg-green-200 rounded w-20 mx-auto"></div>
-                                            <div class="h-1 bg-green-200 rounded w-16 mx-auto"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <i data-lucide="wallet" class="w-6 h-6 text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-lg font-bold text-slate-900">BPR Adipura</h3>
-                            <span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full font-medium">Fintech</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Mobile banking application for BPR Adipura regional bank. Enables customers to perform secure transactions, check balances, transfer funds, and access loan information with user-friendly interface designed for all demographics.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-xs font-medium text-slate-600 bg-green-50 px-2 py-1 rounded border border-green-200">Flutter</span>
-                            <span class="text-xs font-medium text-slate-600 bg-green-50 px-2 py-1 rounded border border-green-200">Banking</span>
-                            <span class="text-xs font-medium text-slate-600 bg-green-50 px-2 py-1 rounded border border-green-200">Secure</span>
-                        </div>
-                        <div class="flex gap-3 mt-4">
-                            <a href="https://play.google.com/store/apps/details?id=com.myadipura" class="text-sm text-green-600 font-medium hover:underline flex items-center">
-                                <i data-lucide="play" class="w-3 h-3 mr-1 fill-current"></i> Play Store
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Flight Navigation -->
-                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col">
-                    <div class="relative h-56 bg-gradient-to-br from-sky-600 to-indigo-700 flex items-center justify-center overflow-hidden">
-                        <div class="relative">
-                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform rotate-3 transition-transform group-hover:rotate-0">
-                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                                    <div class="text-center px-2">
-                                        <i data-lucide="plane" class="w-8 h-8 text-sky-600 mx-auto mb-2"></i>
-                                        <span class="text-xs font-bold text-slate-800">DNP Mobile</span>
-                                        <span class="text-xs text-slate-500 block">Aviation</span>
-                                        <div class="mt-2 space-y-1">
-                                            <div class="h-1 bg-sky-200 rounded w-20 mx-auto"></div>
-                                            <div class="h-1 bg-sky-200 rounded w-16 mx-auto"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <i data-lucide="compass" class="w-6 h-6 text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-lg font-bold text-slate-900">Flight Navigation (DNP)</h3>
-                            <span class="bg-sky-100 text-sky-700 text-xs px-2 py-1 rounded-full font-medium">Aviation</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 flex-1">
-                            Digital navigation publication tool for aviation professionals. Provides pilots and flight crews with essential navigation data, airport information, and flight planning resources in compliance with aviation safety standards.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-xs font-medium text-slate-600 bg-sky-50 px-2 py-1 rounded border border-sky-200">Flutter</span>
-                            <span class="text-xs font-medium text-slate-600 bg-sky-50 px-2 py-1 rounded border border-sky-200">Aviation</span>
-                            <span class="text-xs font-medium text-slate-600 bg-sky-50 px-2 py-1 rounded border border-sky-200">Navigation</span>
-                        </div>
-                        <div class="flex gap-3 mt-4">
-                            <a href="https://play.google.com/store/apps/details?id=com.te.dnpmobile" class="text-sm text-sky-600 font-medium hover:underline flex items-center">
-                                <i data-lucide="play" class="w-3 h-3 mr-1 fill-current"></i> Play Store
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                </article>
 
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-slate-50 border-t border-slate-200" aria-labelledby="projects-title">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-12 animate-on-scroll">
+                    <h2 id="projects-title" class="text-3xl font-bold text-slate-900 mb-4">Featured Projects</h2>
+                    <p class="text-slate-600 max-w-2xl mx-auto">A selection of my recent work showcasing mobile applications across banking, healthcare, education, and retail sectors.</p>
+                </div>
+                
+                <!-- Project Filter Buttons -->
+                <div class="filter-container flex flex-wrap justify-center gap-3 mb-12 animate-on-scroll">
+                    <button class="filter-btn bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors" data-filter="all">
+                        All Projects
+                    </button>
+                    <button class="filter-btn bg-slate-100 text-slate-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors" data-filter="banking">
+                        Banking
+                    </button>
+                    <button class="filter-btn bg-slate-100 text-slate-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors" data-filter="healthcare">
+                        Healthcare
+                    </button>
+                    <button class="filter-btn bg-slate-100 text-slate-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors" data-filter="education">
+                        Education
+                    </button>
+                    <button class="filter-btn bg-slate-100 text-slate-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors" data-filter="retail">
+                        Retail & E-Commerce
+                    </button>
+                </div>
+                
+                <!-- Projects Grid -->
+                <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Projects will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer id="contact" class="bg-slate-900 text-white py-16">
@@ -945,9 +379,371 @@
         </div>
     </footer>
 
-    <!-- Init Icons -->
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary-600 text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none hover:bg-primary-700 transition-all z-40" aria-label="Back to top">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- External JavaScript -->
+    <script src="./js/main.js"></script>
+    
+    <!-- Projects Data and Template -->
     <script>
-        lucide.createIcons();
+        // Projects data
+        const projects = [
+            {
+                id: 1,
+                name: 'Pataniku',
+                category: 'retail',
+                categoryLabel: 'Agriculture',
+                gradient: 'from-green-600 to-lime-700',
+                icon: 'sprout',
+                description: 'Comprehensive e-commerce platform connecting farmers directly with consumers. Features real-time inventory management, dynamic pricing based on harvest seasons, and integrated logistics for fresh produce delivery.',
+                features: [
+                    { strong: 'Direct Trade:', text: ' Farmer-to-consumer marketplace' },
+                    { strong: 'Fresh Tracking:', text: ' Real-time produce quality monitoring' },
+                    { strong: 'Smart Logistics:', text: ' Cold chain delivery optimization' },
+                    { strong: 'Payment:', text: ' Digital wallets, COD, Bank transfer' }
+                ],
+                tech: ['Flutter', 'GetX', 'Firebase', 'Maps API', 'Payment Gateway'],
+                links: null
+            },
+            {
+                id: 2,
+                name: 'POS Offline System',
+                category: 'retail',
+                categoryLabel: 'Production Ready',
+                gradient: 'from-emerald-600 to-teal-700',
+                icon: 'shopping-cart',
+                description: 'Enterprise-grade Point of Sale application solving retail businesses\' need for reliable offline operations. Implemented complete BLoC architecture with SQLite database, supporting multi-payment methods, thermal printing, and comprehensive business analytics.',
+                features: [
+                    { strong: 'Multi-Payment:', text: ' Cash, QRIS, Transfer, Online' },
+                    { strong: 'Thermal Printing:', text: ' Bluetooth 58mm/80mm support' },
+                    { strong: 'Advanced Features:', text: ' Barcode scanner, Analytics, Role-based access' },
+                    { strong: 'Data Management:', text: ' SQLite, Backup/Restore, PDF export' }
+                ],
+                tech: ['Flutter', 'BLoC Pattern', 'SQLite', 'Clean Arch', 'ESC/POS'],
+                links: null
+            },
+            {
+                id: 3,
+                name: 'ARJUNA (Bank CIMB Niaga)',
+                category: 'banking',
+                categoryLabel: 'Enterprise',
+                gradient: 'from-blue-600 to-indigo-700',
+                icon: 'building-2',
+                description: 'Core mobile banking solution for CIMB Niaga serving millions of users. Implemented secure transaction processing, biometric authentication, and real-time portfolio management while achieving 99.9% app stability and 40% faster deployment through CI/CD automation.',
+                features: [],
+                tech: ['Flutter', 'Banking', 'Secure'],
+                links: {
+                    playStore: 'https://play.google.com/store/apps/details?id=com.cimb.arjuna',
+                    appStore: 'https://apps.apple.com/id/app/arjuna-cimb-niaga/id1571642562'
+                }
+            },
+            {
+                id: 4,
+                name: 'Umeds by Ummacademy',
+                category: 'education',
+                categoryLabel: 'Education',
+                gradient: 'from-purple-600 to-pink-700',
+                icon: 'graduation-cap',
+                description: 'Comprehensive medical education platform designed for dental and healthcare students. Features interactive learning modules, progress tracking, and offline content access, successfully deployed to both major app stores with optimized state management.',
+                features: [],
+                tech: ['Provider', 'E-Learning', 'Medical'],
+                links: {
+                    playStore: 'https://play.google.com/store/apps/details?id=com.ummacademy.ummacademy',
+                    appStore: 'https://apps.apple.com/id/app/umeds-by-ummacademy/id6444504054'
+                }
+            },
+            {
+                id: 5,
+                name: 'HATPEN Mobile',
+                category: 'healthcare',
+                categoryLabel: 'Healthcare',
+                gradient: 'from-red-600 to-orange-700',
+                icon: 'heart-pulse',
+                description: 'Specialized aviation health monitoring system ensuring pilot fitness compliance. Built comprehensive medical examination tracking with real-time status updates, serving aviation professionals and regulatory bodies.',
+                features: [],
+                tech: ['Healthcare', 'Aviation', 'Medical'],
+                links: {
+                    playStore: 'https://play.google.com/store/apps/details?id=com.medex.mobile.medex_mobile',
+                    appStore: 'https://apps.apple.com/id/app/hatpen-mobile/id6737185435'
+                }
+            },
+            {
+                id: 6,
+                name: 'Presensi TE',
+                category: 'retail',
+                categoryLabel: 'HR Tech',
+                gradient: 'from-cyan-600 to-teal-700',
+                icon: 'map-pin',
+                description: 'GPS-based attendance tracking system for enterprise workforce management. Features real-time location verification, automated check-in/out, and comprehensive attendance reporting.',
+                features: [],
+                tech: ['Flutter', 'GPS', 'Geolocation'],
+                links: {
+                    playStore: 'https://play.google.com/store/apps/details?id=com.te.presensi'
+                }
+            },
+            {
+                id: 7,
+                name: 'SIManawa',
+                category: 'education',
+                categoryLabel: 'Education',
+                gradient: 'from-amber-600 to-yellow-700',
+                icon: 'school',
+                description: 'Comprehensive school management information system for An-Nawawi Islamic School. Enables parents, teachers, and administrators to manage student data, grades, schedules, and announcements.',
+                features: [],
+                tech: ['Flutter', 'School MIS', 'REST API'],
+                links: {
+                    playStore: 'https://play.google.com/store/apps/details?id=com.te.annawawi'
+                }
+            },
+            {
+                id: 8,
+                name: 'Siranap RS',
+                category: 'healthcare',
+                categoryLabel: 'Healthcare',
+                gradient: 'from-rose-600 to-pink-700',
+                icon: 'hospital',
+                description: 'Hospital bed availability monitoring system providing real-time information on inpatient bed capacity. Helps patients and families find available hospital beds quickly during emergencies.',
+                features: [],
+                tech: ['Flutter', 'Healthcare', 'Real-time'],
+                links: {
+                    appStore: 'https://apps.apple.com/id/app/siranap-rs/id1552359146'
+                }
+            },
+            {
+                id: 9,
+                name: 'BPR Adipura',
+                category: 'banking',
+                categoryLabel: 'Fintech',
+                gradient: 'from-green-600 to-emerald-700',
+                icon: 'credit-card',
+                description: 'Mobile banking application for BPR Adipura regional bank. Enables customers to perform secure transactions, check balances, transfer funds, and access loan information.',
+                features: [],
+                tech: ['Flutter', 'Banking', 'Secure'],
+                links: {
+                    playStore: 'https://play.google.com/store/apps/details?id=com.myadipura'
+                }
+            },
+            {
+                id: 10,
+                name: 'Flight Navigation (DNP)',
+                category: 'retail',
+                categoryLabel: 'Aviation',
+                gradient: 'from-sky-600 to-indigo-700',
+                icon: 'plane',
+                description: 'Digital navigation publication tool for aviation professionals. Provides pilots and flight crews with essential navigation data, airport information, and flight planning resources.',
+                features: [],
+                tech: ['Flutter', 'Aviation', 'Navigation'],
+                links: {
+                    playStore: 'https://play.google.com/store/apps/details?id=com.te.dnpmobile'
+                }
+            }
+        ];
+
+        // Color mappings for Tailwind classes
+        const colorMappings = {
+            'green': {
+                text: 'text-green-600',
+                bg: 'bg-green-200',
+                cardBg: 'bg-green-50',
+                border: 'border-green-200',
+                badge: 'bg-green-100 text-green-700'
+            },
+            'emerald': {
+                text: 'text-emerald-600',
+                bg: 'bg-emerald-200',
+                cardBg: 'bg-emerald-50',
+                border: 'border-emerald-200',
+                badge: 'bg-emerald-100 text-emerald-700'
+            },
+            'blue': {
+                text: 'text-blue-600',
+                bg: 'bg-blue-200',
+                cardBg: 'bg-blue-50',
+                border: 'border-blue-200',
+                badge: 'bg-blue-100 text-blue-700'
+            },
+            'indigo': {
+                text: 'text-indigo-600',
+                bg: 'bg-indigo-200',
+                cardBg: 'bg-indigo-50',
+                border: 'border-indigo-200',
+                badge: 'bg-indigo-100 text-indigo-700'
+            },
+            'purple': {
+                text: 'text-purple-600',
+                bg: 'bg-purple-200',
+                cardBg: 'bg-purple-50',
+                border: 'border-purple-200',
+                badge: 'bg-purple-100 text-purple-700'
+            },
+            'pink': {
+                text: 'text-pink-600',
+                bg: 'bg-pink-200',
+                cardBg: 'bg-pink-50',
+                border: 'border-pink-200',
+                badge: 'bg-pink-100 text-pink-700'
+            },
+            'red': {
+                text: 'text-red-600',
+                bg: 'bg-red-200',
+                cardBg: 'bg-red-50',
+                border: 'border-red-200',
+                badge: 'bg-red-100 text-red-700'
+            },
+            'orange': {
+                text: 'text-orange-600',
+                bg: 'bg-orange-200',
+                cardBg: 'bg-orange-50',
+                border: 'border-orange-200',
+                badge: 'bg-orange-100 text-orange-700'
+            },
+            'amber': {
+                text: 'text-amber-600',
+                bg: 'bg-amber-200',
+                cardBg: 'bg-amber-50',
+                border: 'border-amber-200',
+                badge: 'bg-amber-100 text-amber-700'
+            },
+            'yellow': {
+                text: 'text-yellow-600',
+                bg: 'bg-yellow-200',
+                cardBg: 'bg-yellow-50',
+                border: 'border-yellow-200',
+                badge: 'bg-yellow-100 text-yellow-700'
+            },
+            'rose': {
+                text: 'text-rose-600',
+                bg: 'bg-rose-200',
+                cardBg: 'bg-rose-50',
+                border: 'border-rose-200',
+                badge: 'bg-rose-100 text-rose-700'
+            },
+            'cyan': {
+                text: 'text-cyan-600',
+                bg: 'bg-cyan-200',
+                cardBg: 'bg-cyan-50',
+                border: 'border-cyan-200',
+                badge: 'bg-cyan-100 text-cyan-700'
+            },
+            'teal': {
+                text: 'text-teal-600',
+                bg: 'bg-teal-200',
+                cardBg: 'bg-teal-50',
+                border: 'border-teal-200',
+                badge: 'bg-teal-100 text-teal-700'
+            },
+            'sky': {
+                text: 'text-sky-600',
+                bg: 'bg-sky-200',
+                cardBg: 'bg-sky-50',
+                border: 'border-sky-200',
+                badge: 'bg-sky-100 text-sky-700'
+            },
+            'lime': {
+                text: 'text-lime-600',
+                bg: 'bg-lime-200',
+                cardBg: 'bg-lime-50',
+                border: 'border-lime-200',
+                badge: 'bg-lime-100 text-lime-700'
+            }
+        };
+
+        // Get color from gradient
+        function getColorFromGradient(gradient) {
+            const firstColor = gradient.split(' ')[0].replace('from-', '');
+            return colorMappings[firstColor] || colorMappings['blue'];
+        }
+
+        // Render projects
+        function renderProjects(projectsToRender = projects) {
+            const grid = document.getElementById('projects-grid');
+            grid.innerHTML = projectsToRender.map(project => createProjectCard(project)).join('');
+            
+            // Re-initialize Lucide icons for new content
+            lucide.createIcons();
+            
+            // Add animation classes
+            document.querySelectorAll('.project-card').forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('animate-fade-in');
+                }, index * 100);
+            });
+        }
+
+        // Create project card HTML
+        function createProjectCard(project) {
+            const colors = getColorFromGradient(project.gradient);
+
+            return `
+                <article class="project-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col" data-category="${project.category}">
+                    <div class="relative h-56 bg-gradient-to-br ${project.gradient} flex items-center justify-center overflow-hidden">
+                        <div class="relative">
+                            <div class="w-32 h-64 bg-black rounded-3xl p-2 shadow-2xl transform -rotate-3 transition-transform group-hover:rotate-0">
+                                <div class="w-full h-full bg-white rounded-2xl flex items-center justify-center">
+                                    <div class="text-center px-2">
+                                        <i data-lucide="${project.icon}" class="w-8 h-8 ${colors.text} mx-auto mb-2"></i>
+                                        <span class="text-xs font-bold text-slate-800">${project.name}</span>
+                                        <span class="text-xs text-slate-500 block">${project.categoryLabel}</span>
+                                        <div class="mt-2 space-y-1">
+                                            <div class="h-1 ${colors.bg} rounded w-20 mx-auto"></div>
+                                            <div class="h-1 ${colors.bg} rounded w-16 mx-auto"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute -top-4 -right-4 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                                <i data-lucide="truck" class="w-6 h-6 text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-bold text-slate-900">${project.name}</h3>
+                            <span class="${colors.badge} text-xs px-2 py-1 rounded-full font-medium">${project.categoryLabel}</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-4 flex-1">${project.description}</p>
+                        ${project.features.length > 0 ? `
+                            <ul class="space-y-2 mb-4">
+                                ${project.features.map(feature => `
+                                    <li class="flex items-start text-xs text-slate-600">
+                                        <i data-lucide="check-circle-2" class="w-3 h-3 text-green-600 mt-0.5 mr-2 shrink-0"></i>
+                                        <span><strong>${feature.strong}</strong>${feature.text}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        ` : ''}
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
+                            ${project.tech.map(tech => `
+                                <span class="text-xs font-medium text-slate-600 ${colors.cardBg} px-2 py-1 rounded border ${colors.border}">${tech}</span>
+                            `).join('')}
+                        </div>
+                        ${project.links ? `
+                            <div class="flex gap-3 mt-4">
+                                ${project.links.playStore ? `
+                                    <a href="${project.links.playStore}" class="text-sm ${colors.text} font-medium hover:underline flex items-center">
+                                        <i data-lucide="play" class="w-3 h-3 mr-1 fill-current"></i> Play Store
+                                    </a>
+                                ` : ''}
+                                ${project.links.appStore ? `
+                                    <a href="${project.links.appStore}" class="text-sm ${colors.text} font-medium hover:underline flex items-center">
+                                        <i data-lucide="app-window" class="w-3 h-3 mr-1"></i> App Store
+                                    </a>
+                                ` : ''}
+                            </div>
+                        ` : ''}
+                    </div>
+                </article>
+            `;
+        }
+
+        // Initialize projects on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            renderProjects();
+        });
     </script>
 </body>
 </html>
