@@ -34,6 +34,7 @@ const portfolioProjects = [
         ],
         tech: ['Flutter 3.x', 'Clean Architecture', 'BLoC', 'SQLite (sqflite)', 'just_audio', 'Exact Alarm', 'Overpass OSM API', 'Smart Ring BLE', '288+ Tests'],
         links: {
+            playStore: 'https://play.google.com/store/apps/details?id=com.qolbu.apps',
             github: 'https://github.com/Noufalgithub/qolbu'
         }
     },
