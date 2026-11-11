@@ -5,6 +5,31 @@
 // Projects Dataset
 const portfolioProjects = [
     {
+        id: 'byond-bsi',
+        name: 'BYOND by BSI',
+        client: 'Bank BSI — via PT. MSBU Konsultan Indonesia',
+        category: 'banking',
+        categoryLabel: 'Banking & Fintech',
+        featured: true,
+        image: null,
+        icon: 'building-2',
+        shortDesc: 'iOS developer on BYOND by BSI, Bank Syariah Indonesia\'s digital banking super-app — building Pay & Buy and QRIS payment flows for millions of customers in the Bill Payment & Partnership squad.',
+        fullDesc: 'BYOND by BSI is Bank Syariah Indonesia\'s digital banking super-app, serving millions of customers with financial, social, and spiritual features in one place. As Software Engineer (iOS) in the Bill Payment & Partnership squad, I develop Pay & Buy and QRIS features — secure, reliable payment flows from inquiry and payment confirmation to transaction status and history, built with Swift, UIKit, VIPER, and RxSwift.',
+        challenge: 'Banking-grade reliability and security: payment flows must handle every state — loading, error, timeout, and retry — without ever losing a transaction, while keeping the experience fast and simple for millions of customers.',
+        architecture: 'Native iOS with VIPER architecture (View, Interactor, Presenter, Entity, Router), UIKit with Storyboard/XIB, and RxSwift for reactive data flows. CocoaPods for dependency management, with secure PIN and biometric authentication on payment flows.',
+        solution: 'Built payment inquiry, confirmation, and transaction-status flows with clear loading, error, timeout, and retry handling, collaborating with product, design, backend, and QA in an Agile squad.',
+        metrics: [
+            { label: 'Platform', value: 'iOS Native' },
+            { label: 'Architecture', value: 'VIPER' },
+            { label: 'Google Play Installs', value: '10M+' }
+        ],
+        tech: ['Swift', 'UIKit', 'VIPER', 'RxSwift', 'CocoaPods', 'Storyboard / XIB', 'Xcode', 'Banking Security'],
+        links: {
+            playStore: 'https://play.google.com/store/apps/details?id=co.id.bankbsi.superapp',
+            appStore: 'https://apps.apple.com/id/app/byond-by-bsi/id6444697752'
+        }
+    },
+    {
         id: 'qolbu-app',
         name: 'Qolbu - Islamic Companion',
         client: 'Production App & Open Source',
